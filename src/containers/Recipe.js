@@ -30,8 +30,8 @@ const options = {
 const Recipe = () => {
   const { recipe: content } = useRouteData()
 
-  content.ingredients = documentToReactComponents(content.ingredients)
-  content.method = documentToReactComponents(content.method, options)
+  const ingredients = documentToReactComponents(content.ingredients)
+  const method = documentToReactComponents(content.method, options)
 
   const socialText = content.recipeName + ' by HD Fitness'
 
@@ -46,7 +46,6 @@ const Recipe = () => {
         <Location>
           {({ location })=> {
             const currentUrl = location.href ? location.href.replace('localhost:3000', 'hdfitness.club') : ''
-            console.log(currentUrl)
             return (
               <>
                 <FacebookShareButton className='social-icons' quote={socialText} url={currentUrl}><FacebookIcon size={36} round={true}/></FacebookShareButton>
@@ -61,11 +60,11 @@ const Recipe = () => {
       </div>
       <div className='columnLeft'>
         <h3>Method</h3>
-        {content.method}
+        {method}
       </div>
       <div className='columnRight'>
         <h3>Ingredients</h3>
-        {content.ingredients}
+        {ingredients}
       </div>
       <Link to='/recipes'>Back to Recipes</Link>
       <MetaTags>
