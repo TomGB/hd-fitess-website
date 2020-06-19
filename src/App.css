@@ -1,0 +1,323 @@
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue',
+    Helvetica, Arial, 'Lucida Grande', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+
+  text-align: center;
+
+}
+
+a {
+  text-decoration: none;
+  color: #108db8;
+  font-weight: bold;
+}
+
+.menu {
+  height: 105px;
+  background-color: black;
+  display: block;
+  width: 100%;
+}
+
+.logo {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url('./assets/hd-fitness-tri-small.jpg');
+  margin: 10px;
+  margin-left: 30px;
+  height: 80px;
+  width: 280px;
+  float: left;
+}
+
+.mainMenu {
+  width: calc(100% - 320px);
+  padding-right: 40px;
+  display: inline-block;
+  text-align: right;
+}
+
+nav a {
+  color: white;
+  height: 80px;
+  padding: 40px;
+  padding-top: 45px;
+  display: inline-block;
+}
+
+.cover {
+  background-image: url('./assets/background.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 700px;
+  display: block;
+  text-align: center;
+}
+
+.catchText {
+  color: white;
+  font-style: italic;
+  text-transform: uppercase;
+  font-size: 100px;
+  padding-top: 200px;
+  margin: 0px;
+}
+
+.seperator {
+  background-image: url('./assets/seperator.png');
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 10px;
+  display: inline-block;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.recipesSection .seperator {
+  display: block;
+}
+
+.subCatchText {
+  text-transform: uppercase;
+  font-size: 30px;
+  color: white;
+}
+
+.contain {
+  max-width: 1000px;
+  display: block;
+  margin: auto;
+}
+
+.recipesSection{
+  text-align: left;
+  padding: 20px;
+}
+
+.subHeading {
+  text-transform: uppercase;
+  font-size: 30px;
+  font-style: italic;
+}
+
+.recipeMainImage{
+  background-size: cover;
+  background-position: center;
+  width: 400px;
+  height: 400px;
+}
+
+.recipeContentImage {
+  background-size: cover;
+  background-position: center;
+  width: 400px;
+  height: 400px;
+  display: inline-block;
+  padding: 10px;
+}
+
+.recipeMiniImage {
+  background-size: cover;
+  background-position: center;
+  width: 280px;
+  height: 280px;
+  display: inline-block;
+  position:absolute;
+  bottom:0;
+  left:0;
+}
+
+.social-icons {
+  margin-top: 30px;
+  margin-left: 10px;
+}
+
+.miniRecipe {
+  margin: 20px;
+  width: 280px;
+  height: 440px;
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+  vertical-align: bottom;
+  position:relative;
+}
+
+.miniRecipe h4, .miniRecipe h5 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.columnLeft, .columnRight {
+  display: inline-block;
+  vertical-align: top;
+  padding: 20px;
+  line-height: 30px;
+}
+
+.columnLeft {
+  width: 60%;
+}
+
+.columnRight {
+  width: 40%;
+}
+
+.columnRight p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.miniRecipesSection {
+  text-align: center;
+}
+
+footer {
+  background: black;
+  width: 100%;
+}
+
+.instagramEmbed {
+  vertical-align: top;
+  display: inline-block;
+  padding: 10px;
+  padding-top: 20px;
+}
+
+@media (max-width: 800px) {
+  .mainMenu {
+    display: none;
+  }
+
+  .catchText {
+    font-size: 50px;
+  }
+
+  .columnLeft {
+    width: 100%;
+  }
+  
+  .columnRight {
+    width: 100%;
+  }
+}
+
+.profile-picture-container {
+  width: 400px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: inline-block;
+}
+
+.profile-picture-container img {
+  width: 100%;
+  height: auto;
+}
+
+.about-info {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding-left: 40px;
+  width: calc(100% - 480px);
+  text-align: left;
+  display: inline-block;
+  vertical-align: top;
+  line-height: 30px;
+}
+
+@media (max-width: 800px) {
+  .profile-picture-container {
+    width: 100%;
+    height: 500px;
+    padding-left: 50px;
+    padding-right: 50px;
+    overflow: hidden;
+    margin-bottom: 0px;
+  }
+
+  .about-info {
+    margin-top: 20px;
+    width: 100%;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+}
+
+.contact-page{
+  text-align: left;
+  margin-bottom: 300px;
+  padding: 20px;
+}
+
+.contact-page label {
+  display: block;
+}
+
+.contact-page label > div {
+  width: 100px;
+  text-align: right;
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 5px;
+}
+
+.contact-page label input, .contact-page label textarea {
+  display: inline-block;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  max-width: 300px;
+  width: 100%;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 14px;
+}
+
+.contact-page label textarea {
+  height: 70px;
+}
+
+.contact-page .submit-button {
+  margin-left: 120px;
+}
+
+.contact-form {
+  padding-top: 20px;
+}
+
+.feedback{
+  display: block;
+  border: 1px solid rgb(69, 200, 69);
+  border-radius: 5px;
+  background-color: rgb(216, 253, 216);
+  margin-left: 120px;
+  margin-right: 120px;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+@media (max-width: 800px) {
+  .contact-page label > div {
+    text-align: left;
+    padding-bottom: 10px;
+  }
+  .contact-page label input, .contact-page label textarea {
+    width: 100%;
+    margin-left: 0px;
+  }
+  .feedback{
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
